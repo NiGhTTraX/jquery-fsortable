@@ -1,4 +1,5 @@
 *.swp
 build/
 node_modules/
+.sizecache.json
 

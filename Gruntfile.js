@@ -49,6 +49,13 @@ module.exports = function(grunt) {
 					threshold: 90
 				}
 			}
+		},
+
+		compare_size: {
+			files: [
+				'src/<%= pkg.name %>.js',
+				'build/<%= pkg.name %>.min.js'
+			]
 		}
 	});
 
@@ -63,6 +70,6 @@ module.exports = function(grunt) {
 	// Tasks.
 	grunt.registerTask('test', ['connect', 'blanket_qunit']);
 	grunt.registerTask('lint', ['jshint']);
-	grunt.registerTask('default', ['lint', 'test', 'uglify']);
+	grunt.registerTask('default', ['lint', 'test', 'uglify', 'compare_size']);
 };
 
