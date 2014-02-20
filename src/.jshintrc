@@ -1,0 +1,12 @@
+{
+	"eqeqeq": true,
+	"eqnull": true,
+	"noarg": true,
+	"quotmark": "double",
+	"smarttabs": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true,
+	"browser": true,
+	"jquery": true
+}

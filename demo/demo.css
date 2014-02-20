@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.demo {
+	position: relative;
+	width: 500px;
+	height: 100px;
+	float: left;
+	margin-right: 15px;
+}
+
+.bg {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 500px;
+	height: 100px;
+	z-index: -1;
+}
+.bg div {
+	float: left;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #aaa;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	opacity: 0.4;
+}
+.fs {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	height: 20px;
+	width: 500px;
+	height: 100px;
+	border: 1px solid #aaa;
+}
+.fsortable-empty {
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #999;
+}
+#content {
+	position: absolute;
+	top: 150px;
+	left: 20px;
+}
+.item {
+	height: 20px;
+	width: 20px;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #000;
+	text-align: center;
+	float: left;
+	background-color: #fff;
+}
+/*
+.ui-sortable-placeholder {
+	visibility: visible !important;
+	border: 1px solid #999;
+}
+*/
+

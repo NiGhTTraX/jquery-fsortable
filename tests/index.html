@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Test fsortable</title>
+    <script type="text/javascript" src="../resources/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../resources/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resources/jquery.simulate.min.js"></script>
+    <script type="text/javascript" src="../resources/qunit-1.13.0.js"></script>
+    <script type="text/javascript" src="../resources/blanket-1.1.5.min.js"></script>
+    <script type="text/javascript">
+      if (location.href.match(/(\?|&)gruntReport($|&|=)/)) {
+        blanket.options("reporter", "../resources/grunt-reporter.min.js");
+      }
+    </script>
+    <script type="text/javascript" src="../src/jquery-fsortable.js" data-cover></script>
+
+    <script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="test_core.js"></script>
+    <script type="text/javascript" src="test_draggable.js"></script>
+    <script type="text/javascript" src="test_sort.js"></script>
+    <script type="text/javascript" src="test_connected.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../resources/qunit-1.13.0.css">
+    <link rel="stylesheet" type="text/css" href="tests.css">
+  </head>
+
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+      <div id="fsortable" class="fs">
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+      </div>
+
+      <div id="fsortable2" class="fs">
+        <div class="item">1</div>
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+        <div class="fsortable-empty"></div>
+        <div class="item">2</div>
+      </div>
+
+      <div id="fsortable3" class="fs">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </div>
+
+      <div style="clear: both">&nbsp;</div>
+
+      <div id="items">
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+      </div>
+    </div>
+    <div id="qunit-test-area"></div>
+  </body>
+</html>
+

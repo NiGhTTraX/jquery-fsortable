@@ -1,0 +1,29 @@
+.fs {
+	/*float: left;*/
+	height: 25px;
+	width: 125px;
+	margin-right: 5px;
+}
+
+.fsortable-empty, .fs div {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 2px;
+}
+
+#items {
+	height: 25px;
+	width: 150px;
+}
+
+.item {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 2px;
+}
+
+#qunit-fixture {
+	/*position: static !important;*/
+}
