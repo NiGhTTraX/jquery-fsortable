@@ -24,8 +24,8 @@ $.widget("ntx.fsortable", $.ui.sortable, {
 
 	_refresh: function() {
 		/**
-		 * Get the total size of the fsortable and the number of _occupied and free
-		 * slots.
+		 * Get the total size of the fsortable and the number of occupied
+		 * and free slots.
 		 */
 
 		var freeSlots = $("." + this.options.emptyClass, this.element),
