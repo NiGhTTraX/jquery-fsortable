@@ -1,0 +1,63 @@
+#demo {
+	position: relative;
+}
+
+.demo {
+	position: relative;
+	z-index: 2;
+	width: 500px;
+	height: 85px;
+	margin-bottom: 25px;
+}
+
+.bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.bg div {
+	float: left;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #aaa;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	opacity: 0.4;
+}
+
+.fs {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 20px;
+	width: 500px;
+	height: 100px;
+}
+
+.fsortable-empty {
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #999;
+}
+
+#content {
+	overflow: auto;
+}
+
+.item {
+	height: 20px;
+	width: 20px;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #000;
+	text-align: center;
+	float: left;
+	background-color: #fff;
+	z-index: 99;
+}

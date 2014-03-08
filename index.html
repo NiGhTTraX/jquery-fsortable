@@ -7,6 +7,13 @@
     <meta name="description" content="jquery-fsortable : Fixed capacity sortable plugin" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/demo.css">
+
+
+    <script type="text/javascript" src="javascripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-fsortable.js"></script>
+    <script type="text/javascript" src="javascripts/demo.js"></script>
 
     <title>jquery-fsortable</title>
   </head>
@@ -32,8 +39,51 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="jquery-fsortable" class="anchor" href="#jquery-fsortable"><span class="octicon octicon-link"></span></a>jquery-fsortable</h1>
+<a name="jquery-fsortable" class="anchor" href="#jquery-fsortable"><span class="octicon octicon-link"></span></a>Demo</h1>
 
+    <div id="demo">
+      <p>I'm a fsortable. I can hold 5 items.</p>
+      <div class="demo">
+        <div class="bg">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+
+        <div class="fs">
+          <div class="fsortable-empty"></div>
+          <div class="fsortable-empty"></div>
+          <div class="fsortable-empty"></div>
+          <div class="fsortable-empty"></div>
+          <div class="fsortable-empty"></div>
+        </div>
+      </div>
+
+      <p>I'm a connected fsortable. I can hold 3 items.</p>
+      <div class="demo">
+        <div class="bg">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="fs">
+          <div class="fsortable-empty"></div>
+          <div class="item">b</div>
+          <div class="fsortable-empty"></div>
+        </div>
+      </div>
+
+      <p>We're draggables. Drag us to the above fsortables.</p>
+      <div id="content">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+      </div>
+    </div>
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
@@ -101,7 +151,7 @@ full fsortables.</p>
       </footer>
     </div>
 
-    
+
 
   </body>
 </html>
