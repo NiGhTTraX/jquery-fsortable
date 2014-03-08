@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="jquery-fsortable : Fixed capacity sortable plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>jquery-fsortable</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/NiGhTTraX/jquery-fsortable">View on GitHub</a>
+
+          <h1 id="project_title">jquery-fsortable</h1>
+          <h2 id="project_tagline">Fixed capacity sortable plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/NiGhTTraX/jquery-fsortable/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/NiGhTTraX/jquery-fsortable/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jquery-fsortable" class="anchor" href="#jquery-fsortable"><span class="octicon octicon-link"></span></a>jquery-fsortable</h1>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include <code>jquery-fsortable.js</code> in your project and call
+<code>$("#my-div").fsortable()</code>. fsortable creates a <code>sortable</code>
+instance for you. You can call it on an existing instance by passing
+<code>existingSortable: true</code> in the options at creation time.</p>
+
+<p>After you create the fsortable instance you can call methods on the
+underlying sortable instance by passing them through the <code>.sortable()</code>
+wrapper. The plugin will still fire <code>sort</code> instance just like a normal
+<code>sortable</code> plugin.</p>
+
+<h2>
+<a name="creating-a-fixed-layout" class="anchor" href="#creating-a-fixed-layout"><span class="octicon octicon-link"></span></a>Creating a fixed layout</h2>
+
+<p>There's some necessary markup you need to use to let fsortable know about
+your layout. Since it assumes your sortable has a <code>fixed capacity</code> you
+need to tell it how many items it can hold. It takes that information from
+the HTML itself by counting the number of items in your sortable and the
+number of empty positions.</p>
+
+<p>Any item that matches the <code>items</code> option of the sortable plugin will be
+counted as being part of the layout. Any item that has the <code>emptyClass</code>
+class will be counted as being a free slot. The sum of both will be the
+total capacity of the sortable.</p>
+
+<p>Let's take an example.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"mysortable"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Item 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Item 2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fsortable-empty"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Item 3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<p>We've defined a layout with a total capacity of <code>4</code>, that contains <code>3</code>
+items and <code>1</code> free slot. Once that free slot will be occupied (i.e. dragging
+a <code>draggable</code> over it) the fsortable will become full and it will be marked
+as being so by having the <code>full</code> class set on it.</p>
+
+<p>If you need to change the size of the fsortable you can do so, but remember to
+call the <code>refresh</code> method on it so it recalculates the items and free slots.</p>
+
+<p>To connect draggables with your fsortable you need to do the following.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">".my-draggable"</span><span class="p">).</span><span class="nx">draggable</span><span class="p">({</span>
+  <span class="nx">connectToSortable</span><span class="o">:</span> <span class="s2">".fsortable:not(.full)"</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Note the <code>:not(.full)</code> selector. That tells the draggables to not connect with
+full fsortables.</p>
+
+<p>For full details checkout <a href="https://github.com/NiGhTTraX/jquery-fsortable/">https://github.com/NiGhTTraX/jquery-fsortable/</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">jquery-fsortable maintained by <a href="https://github.com/NiGhTTraX">NiGhTTraX</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
