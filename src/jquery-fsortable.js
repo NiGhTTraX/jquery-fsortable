@@ -266,7 +266,9 @@ $.widget("ntx.fsortable", $.ui.sortable, {
 
 	_destroy: function() {
 		this.element.removeClass("fsortable full");
-		this.element.sortable("destroy");
+		if (!this.options.existingSortable) {
+			this.element.sortable("destroy");
+		}
 	},
 
 	refresh: function() {

@@ -63,3 +63,11 @@ test("test_existing_sortable", function() {
 	equal($("#fsortable").sortable("option", "cancel"), ".test, .fsortable-empty");
 });
 
+test("test_existing_sortable_destroy", function() {
+	$("#fsortable").sortable({cancel: ".test"}).fsortable({existingSortable: true});
+	$("#fsortable").fsortable("destroy");
+
+	ok(!$("#fsortable").fsortable("instance"));
+	ok($("#fsortable").sortable("instance"));
+});
+
