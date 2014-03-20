@@ -20,6 +20,12 @@ repo until the fixes land upstream.
 https://github.com/NiGhTTraX/jquery-ui/tree/experimental
 
 
+Demo
+----
+
+Check http://nighttrax.github.io/jquery-fsortable/ for a demo.
+
+
 Usage
 -----
 
