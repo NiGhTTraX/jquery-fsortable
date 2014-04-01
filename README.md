@@ -1,4 +1,4 @@
-jquery-fsortable
+jquery-fsortable [![Build Status](https://travis-ci.org/NiGhTTraX/jquery-fsortable.svg?branch=master)](https://travis-ci.org/NiGhTTraX/jquery-fsortable)
 ================
 
 #### IMPORTANT NOTE
