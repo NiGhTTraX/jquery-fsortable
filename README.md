@@ -1,9 +1,19 @@
 jquery-fsortable [![Build Status](https://travis-ci.org/NiGhTTraX/jquery-fsortable.svg?branch=master)](https://travis-ci.org/NiGhTTraX/jquery-fsortable)
 ================
 
+A fixed layout sortable plugin for jQuery UI.
+
+
+Demo
+----
+
+Check http://nighttrax.github.io/jquery-fsortable/ for a demo.
+
+
 #### IMPORTANT NOTE
 
-The sortable plugin currently has 2 bugs that affect this plugin when working
+The [jQuery UI sortable](http://jqueryui.com/sortable/) plugin (which fsortable
+builds upon) currently has 2 bugs that affect fsortable when working
 with connected sortables.
 
 The first bug causes over and out events to not be triggered properly when
@@ -18,12 +28,6 @@ If you don't need connected sortables then you can use this plugin as is.
 However, if you do require that functionality, then please use the following
 repo until the fixes land upstream.
 https://github.com/NiGhTTraX/jquery-ui/tree/experimental
-
-
-Demo
-----
-
-Check http://nighttrax.github.io/jquery-fsortable/ for a demo.
 
 
 Usage
