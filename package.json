@@ -1,7 +1,7 @@
 {
   "name": "jquery-fsortable",
   "version": "1.0.0",
-  "description": "Fixed capacity sortable plugin",
+  "description": "Fixed layout sortable plugin",
   "main": "jquery-fsortable.js",
   "directories": {
     "test": "tests"
