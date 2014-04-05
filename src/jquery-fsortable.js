@@ -249,8 +249,10 @@ $.widget("ntx.fsortable", $.ui.sortable, {
 			ui.sender.sortable("refresh");
 
 			// Update capacities.
-			inst._capacity++;
-			inst._occupied--;
+			if (!inst._connected) {
+				inst._capacity++;
+				inst._occupied--;
+			}
 
 			// Prepare the sender in case the item returns to them.
 			inst._outside = true;

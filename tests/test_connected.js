@@ -73,3 +73,27 @@ test("test_over_connected_then_back", function() {
 	testfsortable("#fsortable2", [1, null, null, null, 2]);
 });
 
+test("test_stress_drag_connected", function() {
+	var from = "#fsortable2 .item:first",
+			to = "#fsortable .fsortable-empty:first";
+
+	var fromOffset = findCenter($(from)),
+			toOffset = findCenter($(to)),
+			toOffset_back = toOffset;
+
+	var steps = 20;
+
+	$(from).simulate("mousedown", fromOffset);
+	$(document).simulate("mousemove", toOffset);
+
+	for (var i = 0; i < steps; i++) {
+		$(document).simulate("mousemove", fromOffset);
+		$(document).simulate("mousemove", toOffset);
+	}
+
+	$(from).simulate("mouseup", toOffset);
+	$(from).simulate("click", toOffset);
+	testfsortable("#fsortable", [1, null, null, null, null]);
+	testfsortable("#fsortable2", [null, null, null, null, 2]);
+});
+
