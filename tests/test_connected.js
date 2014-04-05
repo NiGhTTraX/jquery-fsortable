@@ -78,8 +78,7 @@ test("test_stress_drag_connected", function() {
 			to = "#fsortable .fsortable-empty:first";
 
 	var fromOffset = findCenter($(from)),
-			toOffset = findCenter($(to)),
-			toOffset_back = toOffset;
+			toOffset = findCenter($(to));
 
 	var steps = 20;
 
