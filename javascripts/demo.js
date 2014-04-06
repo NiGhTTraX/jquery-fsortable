@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".fs").fsortable({
-		connectWith: ".fs",
+		connectWith: ".fs:not(.full)",
 		tolerance: "pointer",
 		size: 5
 	}).disableSelection();
