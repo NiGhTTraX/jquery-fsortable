@@ -50,5 +50,6 @@
   float: left;
   background-color: #fff;
   z-index: 99;
+  cursor: move;
 }
 
