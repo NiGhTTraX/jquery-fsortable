@@ -10,7 +10,7 @@ $(document).ready(function() {
         connectToSortable: ".fs:not(.full)",
         revert: "invalid",
         helper: "clone"
-    });
+    }).disableSelection();
 
     $(".fs").on("sortupdate", function() {
         $(this).attr("data-content", $(this).fsortable("capacity"));
