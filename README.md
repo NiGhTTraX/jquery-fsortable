@@ -1,6 +1,8 @@
 jquery-fsortable [![Build Status](https://travis-ci.org/NiGhTTraX/jquery-fsortable.svg?branch=master)](https://travis-ci.org/NiGhTTraX/jquery-fsortable)
 ================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/NiGhTTraX/jquery-fsortable.svg)](https://greenkeeper.io/)
+
 A fixed layout sortable plugin for jQuery UI.
 
 

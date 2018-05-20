@@ -19,11 +19,11 @@
     "url": "https://github.com/NiGhTTraX/jquery-fsortable/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.7.0",
-    "grunt-contrib-qunit": "~0.3.0",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-contrib-uglify": "~0.2.5",
+    "grunt": "~1.0.2",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-qunit": "~2.0.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-uglify": "~3.3.0",
     "grunt-blanket-qunit": "~0.2.0",
     "grunt-compare-size": "^0.4.0"
   }
